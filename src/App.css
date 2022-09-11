@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+body {
+  margin: 0;
+  padding: 0;
+  width: auto;
+    font-family: 'Josefin Sans', cursive;
+    background-image:url('../public/back5.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }

@@ -1,0 +1,39 @@
+.dash-head-text{
+    display: flex;
+    box-shadow: 2px 2px 3px black;
+    justify-content: center;
+    margin: 0;
+    margin-top: 80px;
+}
+.dash-text{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.dash-data-main{
+    margin:20px;
+    border:2px solid rgba(0, 0, 0,.5);
+    border-radius: 5px;
+}
+@media (max-width:768px) {
+    .dash-head-text{
+        display: flex;
+        box-shadow: 2px 2px 3px black;
+        justify-content: center;
+        margin: 0;
+        margin-top: 80px;
+    }
+    .dash-text{
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: bold;
+        margin: 10px;
+    }
+    
+    .dash-data-main{
+        margin:5px
+    }
+    
+}

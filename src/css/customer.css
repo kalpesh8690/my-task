@@ -1,0 +1,305 @@
+.custdata-main{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.custdata-box{
+    margin: 100px;
+    padding: 10px;
+    background-color: rgba(162, 162, 162, 0.2);
+    width:400px
+}
+.customer-img-main{
+    display: flex;
+    justify-content: center;
+}
+.customer-img{
+    width:700px
+}
+.cust-info{
+    display: flex;
+    justify-content: center;
+    margin: -20px;
+    background-color: rgb(0, 0, 75);
+}
+.cust-info-text{
+    text-align: center;
+    text-transform: uppercase;
+    color: aliceblue;
+    
+    
+    font-size: 40px;
+}
+.customers-img{
+ display: flex;
+ margin: 20px;
+ justify-content: center;
+}
+.c-img{
+    width:100px
+}
+.customer-name{
+    display: inline;
+    text-align: center;
+    text-transform: uppercase;
+}
+.customer-name h3{
+    margin-top: -10px;
+}
+.customer-email{
+    display: flex;
+    justify-content: center;
+}
+
+.email-con{
+    border:1px solid rgba(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+}
+.email-head{
+    background-color: rgba(66, 0, 109);
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+.email-con p{
+    text-align: center;
+}
+.customer-orders{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.order-con{
+    border:1px solid rgba(75, 0, 0 );
+    display: flex;
+    flex-direction: column;
+}
+.order-head{
+    background-color: rgba(109, 24, 0);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+}
+.order-con p{
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .custdata-main{
+        margin: 0;
+        
+        margin-top: 100px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        
+    }
+    .custdata-box{
+        margin: 0;
+        padding: 0;
+        background-color: unset;
+        width:auto
+    }
+    .customer-img-main{
+        display: flex;
+        justify-content: center;
+    }
+    .customer-img{
+        width:700px;
+        visibility: hidden;
+        display: none;
+    }
+    .cust-info{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        background-color: rgb(0, 0, 75);
+    }
+    .cust-info-text{
+        text-align: center;
+        text-transform: uppercase;
+        color: aliceblue;
+        font-size: 40px;
+    }
+    .customers-img{
+     display: flex;
+     margin: 20px;
+     justify-content: center;
+    }
+    .c-img{
+        width:100px
+    }
+    .customer-name{
+        display: inline;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .customer-name h3{
+        margin-top: -10px;
+    }
+    .customer-email{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .email-con{
+        border:1px solid rgba(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .email-head{
+        background-color: rgba(66, 0, 109);
+        color: aliceblue;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+    }
+    .email-con p{
+        text-align: center;
+    }
+    .customer-orders{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    .order-con{
+        border:1px solid rgba(75, 0, 0 );
+        display: flex;
+        flex-direction: column;
+    }
+    .order-head{
+        background-color: rgba(109, 24, 0);
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        width: 300px;
+    }
+    .order-con p{
+        text-align: center;
+    }
+    
+    
+}
+@media (min-width:768px) and (max-width:912px){
+    .custdata-main{
+        margin: 60px;
+        
+        margin-top: 100px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    .custdata-box{
+        margin: 0;
+        padding: 0;
+        background-color: unset;
+        width:auto
+    }
+    .customer-img-main{
+        display: flex;
+        justify-content: center;
+    }
+    .customer-img{
+        width:700px;
+        visibility: hidden;
+        display: none;
+    }
+    .cust-info{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        background-color: rgb(0, 0, 75);
+    }
+    .cust-info-text{
+        text-align: center;
+        text-transform: uppercase;
+        color: aliceblue;
+        font-size: 40px;
+    }
+    .customers-img{
+     display: flex;
+     margin: 20px;
+     justify-content: center;
+    }
+    .c-img{
+        width:300px
+    }
+    .customer-name{
+        display: inline;
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .customer-name h3{
+        margin-top: -10px;
+    }
+    .customer-email{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .email-con{
+        border:1px solid rgba(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .email-head{
+        background-color: rgba(66, 0, 109);
+        color: aliceblue;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 30px;
+        padding: 0;
+        width: 700px;
+    }
+    .email-con p{
+        font-size: 30px;
+        text-align: center;
+    }
+    .customer-orders{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    .order-con{
+        border:1px solid rgba(75, 0, 0 );
+        display: flex;
+        font-size: 30px;
+        flex-direction: column;
+    }
+    .order-head{
+        background-color: rgba(109, 24, 0);
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        width: 700px;
+    }
+    .order-con p{
+        text-align: center;
+        
+    }   
+}
