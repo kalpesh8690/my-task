@@ -4,6 +4,7 @@
     justify-content: center;
     margin: 0;
     margin-top: 80px;
+   
 }
 .dash-text{
     text-transform: uppercase;
@@ -33,7 +34,8 @@
     }
     
     .dash-data-main{
-        margin:5px
+        margin:5px;
+        margin-bottom: 35px;
     }
     
 }

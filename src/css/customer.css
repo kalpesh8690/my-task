@@ -4,12 +4,14 @@
     display: flex;
     justify-content: center;
     
+    
 }
 .custdata-box{
     margin: 100px;
     padding: 10px;
     background-color: rgba(162, 162, 162, 0.2);
-    width:400px
+    width:400px;
+    
 }
 .customer-img-main{
     display: flex;
@@ -102,7 +104,7 @@
         padding: 0;
         display: flex;
         justify-content: center;
-        margin-bottom: 100px;
+        margin-bottom: 120px;
         
     }
     .custdata-box{

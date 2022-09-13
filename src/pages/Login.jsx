@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Box, Button, Input} from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
@@ -19,6 +19,9 @@ function Login() {
         localStorage.setItem('login',false)
     }
   };
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <div className="login-main">
@@ -37,7 +40,7 @@ function Login() {
                 required
                 type="text"
                 placeholder="Username"
-                autoFocus='true'
+                autoFocus={true}
                 
                 onChange={(e) => setUsername(e.target.value)}
               />

@@ -1,52 +1,23 @@
 import { Box } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React,{useEffect} from "react";
 import "../css/customer.css";
 import {  ArrowRightAltOutlined, Mail } from "@mui/icons-material";
-import { useParams } from "react-router-dom";
-import LoadingScreen from "react-loading-screen";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import { useLocation } from "react-router-dom";
 
 function CustomerData() {
   
-  const [cust, setCust] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  const param = useParams();
-  var id = param.id;
-  const data = cust.find((i) => i.id === id);
-
-  useEffect(() => {
-    axios
-      .get(
-        "https://raw.githubusercontent.com/anadahalli/interview/master/db.json"
-      )
-      .then((res) => {
-        setCust(res.data.customers);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+  const {state} = useLocation();
   var auth = localStorage.getItem("login");
   const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   if (auth === "false") {
     navigate("/");
-  } else {
-    if (loading === true) {
-      <>
-        <LoadingScreen
-          loading={true}
-          bgColor="#f1f1f1"
-          spinnerColor="#9ee5f8"
-          textColor="#676767"
-          text="Please Wait"
-        >
-          <div>Loadable content</div>
-        </LoadingScreen>
-      </>;
-    } else {
+  }
+     else {
       return (
         <>
           <div className="custdata-main">
@@ -62,8 +33,8 @@ function CustomerData() {
                   <img className="c-img" alt="customer-logo" src="/01.png"></img>
                 </div>
                 <div className="customer-name">
-                  <h1>{data.firstName}</h1>
-                  <h3>{data.lastName}</h3>
+                  <h1>{state.firstName}</h1>
+                  <h3>{state.lastName}</h3>
                 </div>
                 <div className="customer-email">
                   <div className="email-con">
@@ -73,7 +44,7 @@ function CustomerData() {
                         Email
                       </h4>
                     </div>
-                    <p>{data.email}</p>
+                    <p>{state.email}</p>
                   </div>
                 </div>
                 <div className="customer-orders">
@@ -84,7 +55,7 @@ function CustomerData() {
                         Total Orders
                       </h4>
                     </div>
-                    <p>{data.orders}</p>
+                    <p>{state.orders}</p>
                   </div>
                 </div>
               </Box>
@@ -94,6 +65,6 @@ function CustomerData() {
       );
     }
   }
-}
+
 
 export default CustomerData;
